@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>WhipPET</title>
+  <meta charset="utf-8">
+   <link rel="stylesheet" href="webcss.css">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Back to top button -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+     <script type="text/javascript">
+       $(document).ready(function(){ 
+    $('#characterLeft').text('140 characters left');
+    $('#message').keydown(function () {
+        var max = 140;
+        var len = $(this).val().length;
+        if (len >= max) {
+            $('#characterLeft').text('You have reached the limit');
+            $('#characterLeft').addClass('red');
+            $('#btnSubmit').addClass('disabled');            
+        } 
+        else {
+            var ch = max - len;
+            $('#characterLeft').text(ch + ' characters left');
+            $('#btnSubmit').removeClass('disabled');
+            $('#characterLeft').removeClass('red');            
+        }
+    });    
+});
+     </script>
+    <script>            
+      jQuery(document).ready(function() {
+        var offset = 220;
+        var duration = 500;
+        jQuery(window).scroll(function() {
+          if (jQuery(this).scrollTop() > offset) {
+            jQuery('.crunchify-top').fadeIn(duration);
+          } else {
+            jQuery('.crunchify-top').fadeOut(duration);
+          }
+        });
+     
+        jQuery('.crunchify-top').click(function(event) {
+          event.preventDefault();
+          jQuery('html, body').animate({scrollTop: 0}, duration);
+          return false;
+        })
+      });
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+  var mapOptions = {
+    center: new google.maps.LatLng(51.503454,-0.119562),
+    zoom: 8,
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+  };
+  
+  
+  
+  var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+  
+  var markers = [
+        ['London Eye, London', 51.503454,-0.119562],
+        ['Palace of Westminster, London', 51.499633,-0.124755]
+  ];
+  
+  
+  // markers & place each one on the map  
+  for( i = 0; i < markers.length; i++ ) {
+    var position = new google.maps.LatLng(markers[i][1], markers[i][2]);
+    bounds.extend(position);
+    marker = new google.maps.Marker({
+      position: position,
+      map: map,
+      title: markers[i][0]
+    });
+    
+    
+    
+    // Automatically center the map fitting all markers on the screen
+    map.fitBounds(bounds);
+  }
+  
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+    <script>
+  //google maps with location of the studio
+   
+       function initMap() {
+      var position = new google.maps.LatLng(51.5176951,-0.0778862);
+        var myOptions = {
+          zoom: 17,
+          scrollwheel: false,
+          center: position,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        var map = new google.maps.Map(
+            document.getElementById("map"),
+            myOptions);
+     
+        var marker = new google.maps.Marker({
+            position: position,
+            map: map,
+            title:"Here is our pet shop."
+        });  
+     
+        var contentString = 'Welcome to  <strong>WhipPET </strong>!';
+        var infowindow = new google.maps.InfoWindow({
+            content: contentString
+        });
+     
+        google.maps.event.addListener(marker, 'click', function() {
+          infowindow.open(map,marker);
+        });
+    }
+  </script>
+  <script type="text/javascript">
+      function showAlert() {
+        var age="17";
+        if(age>=18)
+        {
+          alert("Please, click OK to continue!");
+        }
+        else
+        {
+          alert("You are underage, you cannot continue in this site!");
+        }
+      }
+    </script>
+
+  <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+    async defer></script>
+
+
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+
+<script src="js/backToTop.js"></script>
+
+
+
+
+<!-- jQuery library 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+
+
+<!-- Latest compiled JavaScript-->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-static-top" id="navigation-bar"role="navigation">
+
+    <div>
+
+        <div class="navbar-header">
+            <a href="index.html"><img id="nav-logo1" title="logo" src="images/logo.png" alt="logo-pic"/></a>
+
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" >
+            <a href="index.html"><img id="nav-logo2" title="logo" src="images/logo.png" alt="logo-pic"/></a>
+
+            <ul class="nav navbar-nav" id="nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="AboutUs.html">About Us</a></li>
+                <li><a href="Gallery.html">Gallery</a></li>
+                <li><a href="Care.html">Care</a></li>
+                <li><a href="Products.html">Products</a></li>
+                <li><a href="ContactUs.html">Contact Us</a></li>
+            </ul>
+             <select class="languages">
+            <optgroup label="Languages">
+              <option>English</option>
+              <option>Basque</option>
+              <option>Spanish</option>
+            </optgroup>
+          </select>
+        </div>
+    </div>
+</nav>
+  <a href="#" class="crunchify-top">↑</a>
+
+
+ 
+
+
+<div class="container">
+  <h1>My First Bootstrap Page</h1>
+  <p>This part is inside a .container class.</p>
+  <p>The .container class provides a responsive fixed width container.</p>
+</div>
+
+
+
+
+
+
+  
+<div class="container">
+  <h3>Collapsible Navbar</h3>
+  <p>In this example, the navigation bar is hidden on small screens and replaced by a button in the top right corner (try to re-size this window).
+  <p>Only when the button is clicked, the navigation bar will be displayed.</p>
+</div>
+
+  
+<div id="map" >
+    </div> 
+
+  
+<div class="container">
+  <h3>Collapsible Navbar</h3>
+  <p>In this example, the navigation bar is hidden on small screens and replaced by a button in the top right corner (try to re-size this window).
+  <p>Only when the button is clicked, the navigation bar will be displayed.</p>
+</div>
+<div class="container">
+
+    <form class="well form-horizontal" action=" " method="post"  id="contact_form">
+<fieldset>
+
+<!-- Form Name -->
+<legend>Contact Us Today!</legend>
+
+<!-- Text input-->
+
+<div class="form-group">
+  <label class="col-md-3 control-label">First Name</label>  
+  <div class="col-md-8 inputGroupContainer">
+  <div class="input-group">
+  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+  <input  name="first_name" placeholder="First Name" class="form-control"  type="text">
+    </div>
+  </div>
+</div>
+
+<!-- Text input-->
+
+<div class="form-group">
+  <label class="col-md-3 control-label" >Last Name</label> 
+    <div class="col-md-8 inputGroupContainer">
+    <div class="input-group">
+  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+  <input name="last_name" placeholder="Last Name" class="form-control"  type="text">
+    </div>
+  </div>
+</div>
+
+<!-- Text input-->
+       <div class="form-group">
+  <label class="col-md-3 control-label">E-Mail</label>  
+    <div class="col-md-8 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+  <input name="email" placeholder="E-Mail Address" class="form-control"  type="text">
+    </div>
+  </div>
+</div>
+
+<!-- Text input-->
+       
+<div class="form-group">
+  <label class="col-md-3 control-label">Age #</label>  
+    <div class="col-md-8 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+  <input name="age" placeholder="18" class="form-control" type="text">
+    </div>
+  </div>
+</div>
+
+
+<!-- Text input-->
+       
+<div class="form-group">
+  <label class="col-md-3 control-label">Phone #</label>  
+    <div class="col-md-8 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+  <input name="phone" placeholder="(020) XXXX XXXX" class="form-control" type="text">
+    </div>
+  </div>
+</div>
+
+
+  
+<!-- Text area -->
+  
+<div class="form-group">
+  <label class="col-md-3 control-label">Your message</label>
+    <div class="col-md-8 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+          <textarea class="form-control" name="comment" placeholder="Write down your message"></textarea>
+  </div>
+  </div>
+</div>
+
+<!-- Success message -->
+<div class="alert alert-success" role="alert" id="success_message">Success <i class="glyphicon glyphicon-thumbs-up"></i> Thanks for contacting us, we will get back to you shortly.</div>
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-5 control-label"></label>
+  <div class="col-md-3">
+    <button type="submit" class="btn btn-warning" id="sendbutton" onclick="showAlert()">Send <span class="glyphicon glyphicon-send"></span></button>
+  </div>
+</div>
+
+</fieldset>
+</form>
+</div>
+    </div><!-- /.container -->
+
+
+
+<div class="container">
+  <h2>Information </h2>
+  <div class="panel-group">
+   
+
+    <div class="panel panel-primary">
+      <div class="panel-heading">Timetable</div>
+      <div class="panel-body">Panel Content</div>
+    </div>
+
+   
+
+    <div class="panel panel-info">
+      <div class="panel-heading">Address</div>
+      <div class="panel-body">Panel Content</div>
+    </div>
+
+   
+  </div>
+</div>
+  
+
+
+
+      
+<footer class="text-center center-block">
+            <p class="txt-railway">- WhipPET.com -</p>
+            <br />
+                <a href="https://www.facebook.com/Greyline-Tattoo-779904012086692/?fref=ts">
+        <img title="Facebook" src="icons/fb.png" alt="Facebook"  /></a>
+               <a href="https://www.facebook.com/Greyline-Tattoo-779904012086692/?fref=ts">
+        <img title="Facebook" src="icons/fb.png" alt="Facebook"  /></a>
+               <a href="https://www.facebook.com/Greyline-Tattoo-779904012086692/?fref=ts">
+        <img title="Facebook" src="icons/fb.png" alt="Facebook"  /></a>
+               <a href="https://www.facebook.com/Greyline-Tattoo-779904012086692/?fref=ts">
+        <img title="Facebook" src="icons/fb.png" alt="Facebook"  /></a>
+</footer>
+
+</body>
+</html>
+
+
+

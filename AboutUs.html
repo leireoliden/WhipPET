@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>WhipPET</title>
+  <meta charset="utf-8">
+   <link rel="stylesheet" href="webcss.css">
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Back to top button -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+     
+    <script>            
+      jQuery(document).ready(function() {
+        var offset = 220;
+        var duration = 500;
+        jQuery(window).scroll(function() {
+          if (jQuery(this).scrollTop() > offset) {
+            jQuery('.crunchify-top').fadeIn(duration);
+          } else {
+            jQuery('.crunchify-top').fadeOut(duration);
+          }
+        });
+     
+        jQuery('.crunchify-top').click(function(event) {
+          event.preventDefault();
+          jQuery('html, body').animate({scrollTop: 0}, duration);
+          return false;
+        })
+      });
+    </script>
+
+
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+
+
+<script src="js/backToTop.js"></script>
+
+  <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+  
+
+
+<!-- jQuery library 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+
+
+<!-- Latest compiled JavaScript-->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-static-top" id="navigation-bar"role="navigation">
+
+    <div>
+
+        <div class="navbar-header">
+            <a href="index.html"><img id="nav-logo1" title="logo" src="images/logo.png" alt="logo-pic"/></a>
+
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" >
+            <a href="index.html"><img id="nav-logo2" title="logo" src="images/logo.png" alt="logo-pic"/></a>
+
+            <ul class="nav navbar-nav" id="nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="AboutUs.html">About Us</a></li>
+                <li><a href="Gallery.html">Gallery</a></li>
+                <li><a href="Care.html">Care</a></li>
+                <li><a href="Products.html">Products</a></li>
+                <li><a href="ContactUs.html">Contact Us</a></li>
+            </ul>
+             <select class="languages">
+            <optgroup label="Languages">
+              <option>English</option>
+              <option>Basque</option>
+              <option>Spanish</option>
+            </optgroup>
+          </select>
+        </div>
+    </div>
+</nav>
+  <a href="#" class="crunchify-top">↑</a>
+
+
+<!-- Page Content -->
+    <div class="container">
+
+        <!-- Introduction Row -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">About Us
+                    <small>It's so Nice to Meet You!</small>
+                </h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, explicabo dolores ipsam aliquam inventore corrupti eveniet quisquam quod totam laudantium repudiandae obcaecati ea consectetur debitis velit facere nisi expedita vel?</p>
+            </div>
+        </div>
+          <div class="box">
+                <div class="col-lg-12">
+                    <hr>
+                    <h2 class="intro-text text-center">About
+                        <strong>business casual</strong>
+                    </h2>
+                    <hr>
+                </div>
+                <div class="col-md-6">
+                    <img class="img-responsive img-border-left" id="shop" src="images/shop.jpg" alt="">
+                </div>
+                <div class="col-md-6">
+                    <p>This is a great place to introduce your company or project and describe what you do.</p>
+                    <p>Lid est laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats vitaes nemo minima rerums unsers sadips amets.</p>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+
+        <!-- Team Members Row -->
+        <div class="row" >
+            <div class="col-lg-12">
+                <h2 class="page-header">Our Team</h2>
+            </div>
+            
+
+        
+          
+
+            <div class="staff">
+                <img class="img-circle img-responsive img-center" src="images/img1.jpg" alt="img1">
+                <h3>John Smith
+                    <small>Job Title</small>
+                </h3>
+                <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
+            </div>
+            <div class="staff">
+                <img class="img-circle img-responsive img-center" src="images/img2.jpg" alt="img2">
+                <h3>John Smith
+                    <small>Job Title</small>
+                </h3>
+                <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
+            </div>
+              <div class="staff">
+                <img class="img-circle img-responsive img-center" src="images/img3.jpg" alt="img3">
+                <h3>John Smith
+                    <small>Job Title</small>
+                </h3>
+                <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
+            </div>
+           <div  class="staff">
+                <img class="img-circle img-responsive img-center" src="images/img4.jpg" alt="img4">
+                <h3>John Smith
+                    <small>Job Title</small>
+                </h3>
+                <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
+            </div>
+              <div class="staff">
+                <img class="img-circle img-responsive img-center" src="images/img5.jpg" alt="img5">
+                <h3>John Smith
+                    <small>Job Title</small>
+                </h3>
+                <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
+            </div>
+
+           <div class="staff">
+                <img class="img-circle img-responsive img-center" src="images/img6.jpg" alt="img6">
+                <h3>John Smith
+                    <small>Job Title</small>
+                </h3>
+                <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
+            </div> 
+             
+
+
+        </div>
+
+        <hr>
+
+       
+</div>
+
+    <!-- /.container -->
+
+  
+
+      
+<footer class="text-center center-block">
+            <p class="txt-railway">- WhipPET.com -</p>
+            <br />
+                <a href="https://www.facebook.com/Greyline-img-779904012086692/?fref=ts">
+        <img title="Facebook" src="icons/fb.png" alt="Facebook"  /></a>
+               <a href="https://www.facebook.com/Greyline-img-779904012086692/?fref=ts">
+        <img title="Facebook" src="icons/fb.png" alt="Facebook"  /></a>
+               <a href="https://www.facebook.com/Greyline-img-779904012086692/?fref=ts">
+        <img title="Facebook" src="icons/fb.png" alt="Facebook"  /></a>
+               <a href="https://www.facebook.com/Greyline-img-779904012086692/?fref=ts">
+        <img title="Facebook" src="icons/fb.png" alt="Facebook"  /></a>
+</footer>
+
+</body>
+</html>
+
+
+

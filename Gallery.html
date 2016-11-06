@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>WhipPET</title>
+  <meta charset="utf-8">
+   <link rel="stylesheet" href="webcss.css">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Back to top button -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+     
+    <script>            
+      jQuery(document).ready(function() {
+        var offset = 220;
+        var duration = 500;
+        jQuery(window).scroll(function() {
+          if (jQuery(this).scrollTop() > offset) {
+            jQuery('.crunchify-top').fadeIn(duration);
+          } else {
+            jQuery('.crunchify-top').fadeOut(duration);
+          }
+        });
+     
+        jQuery('.crunchify-top').click(function(event) {
+          event.preventDefault();
+          jQuery('html, body').animate({scrollTop: 0}, duration);
+          return false;
+        })
+      });
+    </script>
+
+
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+
+<script src="js/backToTop.js"></script>
+
+
+
+
+<!-- jQuery library 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+
+
+<!-- Latest compiled JavaScript-->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-static-top" id="navigation-bar"role="navigation">
+
+    <div>
+
+        <div class="navbar-header">
+            <a href="index.html"><img id="nav-logo1" title="logo" src="images/logo.png" alt="logo-pic"/></a>
+
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" >
+            <a href="index.html"><img id="nav-logo2" title="logo" src="images/logo.png" alt="logo-pic"/></a>
+
+            <ul class="nav navbar-nav" id="nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="AboutUs.html">About Us</a></li>
+                <li><a href="Gallery.html">Gallery</a></li>
+                <li><a href="Care.html">Care</a></li>
+                <li><a href="Products.html">Products</a></li>
+                <li><a href="ContactUs.html">Contact Us</a></li>
+            </ul>
+             <select class="languages">
+            <optgroup label="Languages">
+              <option>English</option>
+              <option>Basque</option>
+              <option>Spanish</option>
+            </optgroup>
+          </select>
+        </div>
+    </div>
+</nav>
+  <a href="#" class="crunchify-top">↑</a>
+
+
+
+
+<div class="container">
+  <h1>Our pet gallery </h1>
+  <p>This part is inside a .container class.</p>
+  <p>The .container class provides a responsive fixed width container.</p>
+</div>
+
+
+
+
+<section id="all">
+  
+  <!-- thumbnail image wrapped in a link -->
+    <section class="item">
+      <a href="#img1">
+        <img src="img/pic1.jpg" alt="image1" >
+      </a>
+    </section>
+    <section class="item">
+      <a href="#img2">
+        <img src="img/pic2.jpg" alt="image2" >
+      </a>
+    </section>
+    <section class="item">
+      <a href="#img3">
+        <img src="img/pic3.jpg" alt="image3" >
+      </a>
+    </section>
+    <section class="item">
+      <a href="#img4">
+        <img src="img/pic4.jpg" alt="image4" >
+      </a>
+    </section>
+    <section class="item">
+      <a href="#img5">
+        <img src="img/pic5.jpg" alt="image5" >
+      </a>
+    </section>
+    <section class="item">
+      <a href="#img6">
+        <img src="img/pic6.jpg" alt="image6" >
+      </a>
+    </section>
+    <section class="item">
+      <a href="#img7">
+        <img src="img/pic7.jpg" alt="image7" >
+      </a>
+    </section>
+    <section class="item">
+      <a href="#img8">
+        <img src="img/pic8.jpg" alt="image8" >
+      </a>
+    </section>
+    <section class="item">
+      <a href="#img9">
+        <img src="img/pic9.jpg" alt="image9" >
+      </a>
+    </section>
+    <section class="item">
+      <a href="#img10">
+        <img src="img/pic10.jpg" alt="image10" >
+      </a>
+    </section>
+    <section class="item">
+      <a href="#img11">
+        <img src="img/pic11.jpg" alt="image11" >
+      </a>
+    </section>
+    <section class="item">
+      <a href="#img12">
+        <img src="img/pic12.jpg" alt="image12" >
+      </a>
+    </section>
+    <section class="item">
+      <a href="#img13">
+        <img src="img/pic13.jpg" alt="image13" >
+      </a>
+    </section>
+    <section class="item">
+      <a href="#img14">
+        <img src="img/pic14.jpg" alt="image14" >
+      </a>
+    </section>
+    <section class="item">
+      <a href="#img15">
+        <img src="img/pic15.jpg" alt="image15" >
+      </a>
+    </section>
+    <section class="item">
+      <a href="#img16">
+        <img src="img/pic16.jpg" alt="image16" >
+      </a>
+    </section>
+
+    <section class="item">
+      <a href="#img17">
+        <img src="img/pic17.jpg" alt="image17" >
+      </a>
+    </section>
+    <section class="item">
+      <a href="#img18">
+        <img src="img/pic18.jpg" alt="image18" >
+      </a>
+    </section>
+    <section class="item">
+      <a href="#img19">
+        <img src="img/pic19.jpg" alt="image19" >
+      </a>
+    </section>
+    <section class="item">
+      <a href="#img20">
+        <img src="img/pic20.jpg" alt="image20" >
+      </a>
+    </section>
+    <section class="item">
+      <a href="#img21">
+        <img src="img/pic21.jpg" alt="image21" >
+      </a>
+    </section>
+    <section class="item">
+      <a href="#img22">
+        <img src="img/pic22.jpg" alt="image22">
+      </a>
+    </section>
+    <section class="item">
+      <a href="#img23">
+        <img src="img/pic23.jpg" alt="image23" >
+      </a>
+    </section>
+    <section class="item">
+      <a href="#img24">
+        <img src="img/pic24.jpg" alt="image24" >
+      </a>
+    </section>
+    <section class="item">
+      <a href="#img25">
+        <img src="img/pic25.jpg" alt="image25" >
+      </a>
+    </section>
+    <section class="item">
+      <a href="#img26">
+        <img src="img/pic26.jpg" alt="image26" >
+      </a>
+    </section>
+    <section class="item">
+      <a href="#img27">
+        <img src="img/pic27.jpg" alt="image27" >
+      </a>
+    </section>
+    <section class="item">
+      <a href="#img28">
+        <img src="img/pic28.jpg" alt="image28" >
+      </a>
+    </section>
+    <section class="item">
+      <a href="#img29">
+        <img src="img/pic29.jpg" alt="image29" >
+      </a>
+    </section>
+    <section class="item">
+      <a href="#img30">
+        <img src="img/pic30.jpg" alt="image30" >
+      </a>
+    </section>
+    <section class="item">
+      <a href="#img31">
+        <img src="img/pic31.jpg" alt="image31" >
+      </a>
+    </section>
+    <section class="item">
+      <a href="#img32">
+        <img src="img/pic32.jpg" alt="image32" >
+      </a>
+    </section>
+    
+    
+    
+
+</section>
+ 
+
+
+<section>
+
+<!-- lightbox container hidden with CSS-->
+<div class="lightbox" id="img1">
+  <div class="box">
+  <a class="close" href="#!">x</a>
+    <p class="title">Animal</p>
+    <div class="content">
+      <a class="big" href="img/pic1.jpg" target="_blank">
+      <img src="img/pic1.jpg"  alt="image1">  </a>
+      <p class="desc">WhipPET</p>
+    </div>
+    <a class="prev" href="#img32">Previous</a>
+    <a class="next" href="#img2">Next</a>
+    <div class="clear"></div>
+  </div>
+</div>    
+    
+<div class="lightbox" id="img2">
+  <div class="box">
+  <a class="close" href="#!">x</a>
+    <p class="title">Animal</p>
+    <div class="content">
+      <a class="big" href="img/pic2.jpg" target="_blank">
+      <img src="img/pic2.jpg" alt="image2"> </a>
+        <p class="desc">WhipPET</p>
+    </div>
+    <a class="prev" href="#img1">Previous</a>
+    <a class="next" href="#img3">Next</a>
+    <div class="clear"></div>
+  </div>
+</div>  
+
+<div class="lightbox" id="img3">
+  <div class="box">
+  <a class="close" href="#!">x</a>
+    <p class="title">Animal</p>
+    <div class="content">
+      <a class="big" href="img/pic3.jpg" target="_blank">
+      <img src="img/pic3.jpg" alt="image3"> </a>
+        <p class="desc">WhipPET</p>
+    </div>
+    <a class="prev" href="#img2">Previous</a>
+    <a class="next" href="#img4">Next</a>
+    <div class="clear"></div>
+  </div>
+</div>
+
+
+
+
+  <div class="lightbox" id="img4">
+  <div class="box">
+  <a class="close" href="#!">x</a>
+    <p class="title">Animal</p>
+    <div class="content">
+      <a class="big" href="img/pic4.jpg" target="_blank">
+      <img src="img/pic4.jpg" alt="image4"> </a>
+        <p class="desc">WhipPET</p>
+    </div>
+    <a class="prev" href="#img3">Previous</a>
+    <a class="next" href="#img5">Next</a>
+    <div class="clear"></div>
+  </div>
+</div>
+
+
+  <div class="lightbox" id="img5">
+  <div class="box">
+  <a class="close" href="#!">x</a>
+    <p class="title">Animal</p>
+    <div class="content">
+      <a class="big" href="img/pic5.jpg" target="_blank">
+      <img src="img/pic5.jpg" alt="image5"> </a>
+        <p class="desc">WhipPET</p>
+    </div>
+    <a class="prev" href="#img4">Previous</a>
+    <a class="next" href="#img6">Next</a>
+    <div class="clear"></div>
+  </div>
+</div>
+
+
+  <div class="lightbox" id="img6">
+  <div class="box">
+  <a class="close" href="#!">x</a>
+    <p class="title">Animal</p>
+    <div class="content">
+      <a class="big" href="img/pic6.jpg" target="_blank">
+      <img src="img/pic6.jpg" alt="image6"> </a>
+        <p class="desc">WhipPET</p>
+    </div>
+    <a class="prev" href="#img5">Previous</a>
+    <a class="next" href="#img7">Next</a>
+    <div class="clear"></div>
+  </div>
+</div>
+
+
+  <div class="lightbox" id="img7">
+  <div class="box">
+  <a class="close" href="#!">x</a>
+    <p class="title">Animal</p>
+    <div class="content">
+      <a class="big" href="img/pic7.jpg" target="_blank">
+      <img src="img/pic7.jpg" alt="image7"> </a>
+        <p class="desc">WhipPET</p>
+    </div>
+    <a class="prev" href="#img6">Previous</a>
+    <a class="next" href="#img8">Next</a>
+    <div class="clear"></div>
+ </div>
+ </div>
+
+  <div class="lightbox" id="img8">
+  <div class="box">
+  <a class="close" href="#!">x</a>
+    <p class="title">Animal</p>
+    <div class="content">
+      <a class="big" href="img/pic8.jpg" target="_blank">
+      <img src="img/pic8.jpg" alt="image8"> </a>
+        <p class="desc">WhipPET</p>
+    </div>
+    <a class="prev" href="#img7">Previous</a>
+    <a class="next" href="#img9">Next</a>
+    <div class="clear"></div>
+ </div>
+ </div>
+
+  <div class="lightbox" id="img9">
+  <div class="box">
+  <a class="close" href="#!">x</a>
+    <p class="title">Animal</p>
+    <div class="content">
+      <a class="big" href="img/pic9.jpg" target="_blank">
+      <img src="img/pic9.jpg" alt="image9"> </a>
+        <p class="desc">WhipPET</p>
+    </div>
+    <a class="prev" href="#img8">Previous</a>
+    <a class="next" href="#img10">Next</a>
+    <div class="clear"></div>
+  </div>
+</div>
+
+
+  <div class="lightbox" id="img10">
+  <div class="box">
+  <a class="close" href="#!">x</a>
+    <p class="title">Animal</p>
+    <div class="content">
+      <a class="big" href="img/pic10.jpg" target="_blank">
+      <img src="img/pic10.jpg" alt="image10"> </a>
+        <p class="desc">WhipPET</p>
+    </div>
+    <a class="prev" href="#img9">Previous</a>
+    <a class="next" href="#img11">Next</a>
+    <div class="clear"></div>
+ </div>
+ </div>
+
+  <div class="lightbox" id="img11">
+  <div class="box">
+  <a class="close" href="#!">x</a>
+    <p class="title">Animal</p>
+    <div class="content">
+      <a class="big" href="img/pic11.jpg" target="_blank">
+      <img src="img/pic11.jpg" alt="image11"> </a>
+        <p class="desc">WhipPET</p>
+    </div>
+    <a class="prev" href="#img10">Previous</a>
+    <a class="next" href="#img12">Next</a>
+    <div class="clear"></div>
+ </div>
+ </div>
+
+  <div class="lightbox" id="img12">
+  <div class="box">
+  <a class="close" href="#!">x</a>
+    <p class="title">Animal</p>
+    <div class="content">
+      <a class="big" href="img/pic12.jpg" target="_blank">
+      <img src="img/pic12.jpg" alt="image12"> </a>
+        <p class="desc">WhipPET</p>
+    </div>
+    <a class="prev" href="#img11">Previous</a>
+    <a class="next" href="#img13">Next</a>
+    <div class="clear"></div>
+ </div>
+ </div>
+
+
+  <div class="lightbox" id="img13">
+  <div class="box">
+  <a class="close" href="#!">x</a>
+    <p class="title">Animal</p>
+    <div class="content">
+      <a class="big" href="img/pic13.jpg" target="_blank">
+      <img src="img/pic13.jpg" alt="image13"> </a>
+        <p class="desc">WhipPET</p>
+    </div>
+    <a class="prev" href="#img12">Previous</a>
+    <a class="next" href="#img14">Next</a>
+    <div class="clear"></div>
+  </div>
+</div>
+
+<div class="lightbox" id="img14">
+  <div class="box">
+  <a class="close" href="#!">x</a>
+    <p class="title">Animal</p>
+    <div class="content">
+      <a class="big" href="img/pic14.jpg" target="_blank">
+      <img src="img/pic14.jpg" alt="image14"> </a>
+        <p class="desc">WhipPET</p>
+    </div>
+    <a class="prev" href="#img13">Previous</a>
+    <a class="next" href="#img15">Next</a>
+    <div class="clear"></div>
+  </div>
+</div>
+
+<div class="lightbox" id="img15">
+  <div class="box">
+  <a class="close" href="#!">x</a>
+    <p class="title">Animal</p>
+    <div class="content">
+      <a class="big" href="img/pic15.jpg" target="_blank">
+      <img src="img/pic15.jpg" alt="image15"> </a>
+        <p class="desc">WhipPET</p>
+    </div>
+    <a class="prev" href="#img14">Previous</a>
+    <a class="next" href="#img16">Next</a>
+    <div class="clear"></div>
+  </div>
+</div>
+
+<div class="lightbox" id="img16">
+  <div class="box">
+  <a class="close" href="#!">x</a>
+    <p class="title">Animal</p>
+    <div class="content">
+      <a class="big" href="img/pic16.jpg" target="_blank">
+     <img src="img/pic16.jpg" alt="image16"> </a>
+        <p class="desc">WhipPET</p>
+    </div>
+    <a class="prev" href="#img15">Previous</a>
+    <a class="next" href="#img17">Next</a>
+    <div class="clear"></div>
+  </div>
+</div>
+
+<div class="lightbox" id="img17">
+  <div class="box">
+  <a class="close" href="#!">x</a>
+    <p class="title">Animal</p>
+    <div class="content">
+      <a class="big" href="img/pic17.jpg" target="_blank">
+        <img src="img/pic17.jpg" alt="image17"></a> 
+        <p class="desc">WhipPET</p>
+    </div>
+    <a class="prev" href="#img16">Previous</a>
+    <a class="next" href="#img18">Next</a>
+    <div class="clear"></div>
+  </div>
+</div>
+
+
+<div class="lightbox" id="img18">
+  <div class="box">
+  <a class="close" href="#!">x</a>
+    <p class="title">Animal</p>
+    <div class="content">
+      <a class="big" href="img/pic18.jpg" target="_blank">
+        <img src="img/pic18.jpg" alt="image18"></a> 
+        <p class="desc">WhipPET</p>
+    </div>
+    <a class="prev" href="#img17">Previous</a>
+    <a class="next" href="#img19">Next</a>
+    <div class="clear"></div>
+  </div>
+</div>
+
+<div class="lightbox" id="img19">
+  <div class="box">
+  <a class="close" href="#!">x</a>
+    <p class="title">Animal</p>
+    <div class="content">
+      <a class="big" href="img/pic19.jpg" target="_blank">
+        <img src="img/pic19.jpg" alt="image19"> </a>
+        <p class="desc">WhipPET</p>
+    </div>
+    <a class="prev" href="#img18">Previous</a>
+    <a class="next" href="#img20">Next</a>
+    <div class="clear"></div>
+  </div>
+</div>
+
+<div class="lightbox" id="img20">
+  <div class="box">
+  <a class="close" href="#!">x</a>
+    <p class="title">Animal</p>
+    <div class="content">
+       <a class="big" href="img/pic20.jpg" target="_blank">
+        <img src="img/pic20.jpg" alt="image20"> </a>
+        <p class="desc">WhipPET</p>
+    </div>
+    <a class="prev" href="#img19">Previous</a>
+    <a class="next" href="#img21">Next</a>
+    <div class="clear"></div>
+  </div>
+</div>
+
+<div class="lightbox" id="img21">
+  <div class="box">
+  <a class="close" href="#!">x</a>
+    <p class="title">Animal</p>
+    <div class="content">
+       <a class="big" href="img/pic21.jpg" target="_blank">
+        <img src="img/pic21.jpg" alt="image21"> </a>
+        <p class="desc">WhipPET</p>
+    </div>
+    <a class="prev" href="#img20">Previous</a>
+    <a class="next" href="#img22">Next</a>
+    <div class="clear"></div>
+  </div>
+</div>
+
+<div class="lightbox" id="img22">
+  <div class="box">
+  <a class="close" href="#!">x</a>
+    <p class="title">Animal</p>
+    <div class="content">
+       <a class="big" href="img/pic22.jpg" target="_blank">
+        <img src="img/pic22.jpg" alt="image22"> </a>
+        <p class="desc">WhipPET</p>
+    </div>
+    <a class="prev" href="#img21">Previous</a>
+    <a class="next" href="#img23">Next</a>
+    <div class="clear"></div>
+  </div>
+</div>
+
+<div class="lightbox" id="img23">
+  <div class="box">
+  <a class="close" href="#!">x</a>
+    <p class="title">Animal</p>
+    <div class="content">
+       <a class="big" href="img/pic23.jpg" target="_blank">
+        <img src="img/pic23.jpg" alt="image23"> </a>
+        <p class="desc">WhipPET</p>
+    </div>
+    <a class="prev" href="#img22">Previous</a>
+    <a class="next" href="#img24">Next</a>
+    <div class="clear"></div>
+  </div>
+</div>
+
+<div class="lightbox" id="img24">
+  <div class="box">
+  <a class="close" href="#!">x</a>
+    <p class="title">Animal</p>
+    <div class="content">
+       <a class="big" href="img/pic24.jpg" target="_blank">
+        <img src="img/pic24.jpg" alt="image24"> </a>
+        <p class="desc">WhipPET</p>
+    </div>
+    <a class="prev" href="#img23">Previous</a>
+    <a class="next" href="#img25">Next</a>
+    <div class="clear"></div>
+  </div>
+</div>
+
+<div class="lightbox" id="img25">
+  <div class="box">
+  <a class="close" href="#!">x</a>
+    <p class="title">Animal</p>
+    <div class="content">
+       <a class="big" href="img/pic25.jpg" target="_blank">
+        <img src="img/pic25.jpg" alt="image25"> </a>
+        <p class="desc">WhipPET</p>
+    </div>
+    <a class="prev" href="#img24">Previous</a>
+    <a class="next" href="#img26">Next</a>
+    <div class="clear"></div>
+  </div>
+</div>
+
+<div class="lightbox" id="img26">
+  <div class="box">
+  <a class="close" href="#!">x</a>
+    <p class="title">Animal</p>
+    <div class="content">
+       <a class="big" href="img/pic26.jpg" target="_blank">
+        <img src="img/pic26.jpg" alt="image26"> </a>
+        <p class="desc">WhipPET</p>
+    </div>
+    <a class="prev" href="#img25">Previous</a>
+    <a class="next" href="#img27">Next</a>
+    <div class="clear"></div>
+  </div>
+</div>
+
+<div class="lightbox" id="img27">
+  <div class="box">
+  <a class="close" href="#!">x</a>
+    <p class="title">Animal</p>
+    <div class="content">
+       <a class="big" href="img/pic27.jpg" target="_blank">
+        <img src="img/pic27.jpg" alt="image27"> </a>
+        <p class="desc">WhipPET</p>
+    </div>
+    <a class="prev" href="#img26">Previous</a>
+    <a class="next" href="#img28">Next</a>
+    <div class="clear"></div>
+  </div>
+</div>
+
+<div class="lightbox" id="img28">
+  <div class="box">
+  <a class="close" href="#!">x</a>
+    <p class="title">Animal</p>
+    <div class="content">
+       <a class="big" href="img/pic28.jpg" target="_blank">
+        <img src="img/pic28.jpg" alt="image28"> </a>
+        <p class="desc">WhipPET</p>
+    </div>
+    <a class="prev" href="#img27">Previous</a>
+    <a class="next" href="#img29">Next</a>
+    <div class="clear"></div>
+  </div>
+</div>
+
+<div class="lightbox" id="img29">
+  <div class="box">
+  <a class="close" href="#!">x</a>
+    <p class="title">Animal</p>
+    <div class="content">
+       <a class="big" href="img/pic29.jpg" target="_blank">
+        <img src="img/pic29.jpg" alt="image29"> </a>
+        <p class="desc">WhipPET</p>
+    </div>
+    <a class="prev" href="#img28">Previous</a>
+    <a class="next" href="#img30">Next</a>
+    <div class="clear"></div>
+  </div>
+</div>
+
+<div class="lightbox" id="img30">
+  <div class="box">
+  <a class="close" href="#!">x</a>
+    <p class="title">Animal</p>
+    <div class="content">
+       <a class="big" href="img/pic30.jpg" target="_blank">
+        <img src="img/pic30.jpg" alt="image30"> </a>
+        <p class="desc">WhipPET</p>
+    </div>
+    <a class="prev" href="#img29">Previous</a>
+    <a class="next" href="#img31">Next</a>
+    <div class="clear"></div>
+  </div>
+</div>
+
+<div class="lightbox" id="img31">
+  <div class="box">
+  <a class="close" href="#!">x</a>
+    <p class="title">Animal</p>
+    <div class="content">
+       <a class="big" href="img/pic31.jpg" target="_blank">
+        <img src="img/pic31.jpg" alt="image31"> </a>
+        <p class="desc">WhipPET</p>
+    </div>
+    <a class="prev" href="#img30">Previous</a>
+    <a class="next" href="#img32">Next</a>
+    <div class="clear"></div>
+  </div>
+</div>
+
+<div class="lightbox" id="img32">
+  <div class="box">
+  <a class="close" href="#!">x</a>
+    <p class="title">Animal</p>
+    <div class="content">
+       <a class="big" href="img/pic32.jpg" target="_blank">
+        <img src="img/pic32.jpg" alt="image32"> </a>
+        <p class="desc">WhipPET</p>
+    </div>
+    <a class="prev" href="#img31">Previous</a>
+    <a class="next" href="#img1">Next</a>
+    <div class="clear"></div>
+  </div>
+</div>
+
+
+
+  </div>
+ </section>
+ <!-- 
+<div class="container">
+  <h3>Collapsible Navbar</h3>
+  <p>In this example, the navigation bar is hidden on small screens and replaced by a button in the top right corner (try to re-size this window).
+  <p>Only when the button is clicked, the navigation bar will be displayed.</p>
+</div>-->
+      
+<footer class="text-center center-block">
+            <p class="txt-railway">- WhipPET.com -</p>
+            <br />
+                <a href="https://www.facebook.com/Greyline-img-779904012086692/?fref=ts">
+        <img title="Facebook" src="icons/fb.png" alt="Facebook"  /></a>
+               <a href="https://www.facebook.com/Greyline-img-779904012086692/?fref=ts">
+        <img title="Facebook" src="icons/fb.png" alt="Facebook"  /></a>
+               <a href="https://www.facebook.com/Greyline-img-779904012086692/?fref=ts">
+        <img title="Facebook" src="icons/fb.png" alt="Facebook"  /></a>
+               <a href="https://www.facebook.com/Greyline-img-779904012086692/?fref=ts">
+        <img title="Facebook" src="icons/fb.png" alt="Facebook"  /></a>
+</footer>
+
+</body>
+</html>
+
+
+

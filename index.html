@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>WhipPET</title>
+  <meta charset="utf-8">
+   <link rel="stylesheet" href="webcss.css">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Back to top button -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+     
+    <script>            
+      jQuery(document).ready(function() {
+        var offset = 220;
+        var duration = 500;
+        jQuery(window).scroll(function() {
+          if (jQuery(this).scrollTop() > offset) {
+            jQuery('.crunchify-top').fadeIn(duration);
+          } else {
+            jQuery('.crunchify-top').fadeOut(duration);
+          }
+        });
+     
+        jQuery('.crunchify-top').click(function(event) {
+          event.preventDefault();
+          jQuery('html, body').animate({scrollTop: 0}, duration);
+          return false;
+        })
+      });
+    </script>
+    <script type="text/javascript">
+      function showAlert() {
+        alert("Please, click OK to continue!");
+      }
+    </script>
+    
+
+
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+
+<script src="js/backToTop.js"></script>
+
+
+
+
+<!-- jQuery library 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+
+
+<!-- Latest compiled JavaScript-->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!--<script type="text/javascript">
+  alert("Welcome to Our Site!");
+</script>-->
+
+
+
+
+
+
+  <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-static-top" id="navigation-bar"role="navigation">
+
+    <div>
+
+        <div class="navbar-header">
+            <a href="index.html">
+            <img id="nav-logo1" title="logo" src="images/logo.png" alt="logo-pic"/></a>
+
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" >
+     <a href="index.html"><img id="nav-logo2" title="logo" src="images/logo.png" alt="logo-pic"/>
+            
+            </a>
+
+            <ul class="nav navbar-nav" id="nav">
+               <li><a href="index.html">Home</a><small>Welcome!</small></li>
+              <!--    <li><a href="index.html" onmouseover=showAlert()>Home</a></li>-->
+                <li><a href="AboutUs.html">About Us</a><small>Our story</small></li>
+                <li><a href="Gallery.html">Gallery</a><small>Browse images</small></li>
+                <li><a href="Care.html">Care</a><small>Take care</small></li>
+                <li><a href="Products.html">Products</a><small>Treat your pet</small></li>
+                <li><a href="ContactUs.html">Contact Us</a><small>Get in touch</small></li>
+            </ul>
+            <!-- <select class="languages">
+                <optgroup label="Languages">
+                  <option>English</option>
+                  <option>Basque</option>
+                  <option>Spanish</option>
+                </optgroup>
+              </select>-->
+        </div>
+    </div>
+</nav>
+  <a href="#" class="crunchify-top">↑</a>
+
+    <!-- Header -->
+    <section id="top" class="header">
+      <img src="images/index12.jpg" alt="front-image">
+        <div class="text-vertical-center">
+          <!--  <h1>Start Bootstrap</h1>
+            <h3>Free Bootstrap Themes &amp; Templates</h3>
+            <br>
+            <a href="AboutUs.html" class="btn btn-dark btn-lg">Find Out More</a>-->
+        </div>
+   </section>
+
+
+      
+<footer class="text-center center-block">
+            <p class="txt-railway">- WhipPET.com -</p>
+            <br />
+                <a href="https://www.facebook.com/Greyline-Tattoo-779904012086692/?fref=ts">
+        <img title="Facebook" src="icons/fb.png" alt="Facebook"  /></a>
+               <a href="https://www.facebook.com/Greyline-Tattoo-779904012086692/?fref=ts">
+        <img title="Facebook" src="icons/fb.png" alt="Facebook"  /></a>
+               <a href="https://www.facebook.com/Greyline-Tattoo-779904012086692/?fref=ts">
+        <img title="Facebook" src="icons/fb.png" alt="Facebook"  /></a>
+               <a href="https://www.facebook.com/Greyline-Tattoo-779904012086692/?fref=ts">
+        <img title="Facebook" src="icons/fb.png" alt="Facebook"  /></a>
+</footer>
+
+</body>
+</html>
+
+
+
